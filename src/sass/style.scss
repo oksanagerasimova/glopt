@@ -1,0 +1,35 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+@import 'libs/slick';
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'blocks/buttons';
+@import 'blocks/menu';
+@import 'blocks/title';
+@import 'blocks/advantages';
+@import 'blocks/work';
+@import 'blocks/agent';
+@import 'blocks/price';
+@import 'blocks/schema';
+@import 'blocks/carousel';
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.divider {
+    width: 148px;
+    height: 1px;
+    background-color: $main-color;
+    margin: 20px auto 0 auto;
+}
