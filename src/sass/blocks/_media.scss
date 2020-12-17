@@ -1,0 +1,316 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 950px;
+    }
+    .menu {
+        &__list {
+            width: 560px;
+            margin: 37px 15px;
+            &-item {
+                padding: 0px 10px 0 0;
+            }
+        }
+        &__contacts {
+            &-btn {
+                width: 140px;
+                margin-left: 10px;
+            }
+            &-number {
+                font-size: 13px;
+                font-weight: 700;
+            }
+            &-title {
+                font-size: 13px;
+            }
+        }
+        &__header {
+            font-size: 68px;
+        }
+        &__subheader {
+            font-size: 40px;
+        }
+        &__options {
+            margin-top: 30px;
+            justify-content: center;
+        }
+        &__item {
+            &-descr {
+                width: 200px;
+            }
+        }
+    }
+    .advantages {
+        &__wrapper {
+            justify-content: center;
+        }
+        &__item {
+            width: 400px;
+        }
+    }
+    .work {
+        &__wrapper {
+            grid-template-columns: repeat(3,260px);
+            justify-content: center;
+        }
+        &__img {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(2,264px);
+            justify-content: center;
+            margin-top: 0;
+        }
+        &__item {
+            margin-top: 30px;
+        }
+    }
+    .price {
+        &__title {
+            width: 100%;
+        }
+        .consultation {
+            &__contacts {
+                input {
+                    width: 260px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .menu {
+        padding: 23px 0 75px 0;
+        &__logo {
+            display: none;
+        }
+        &__contacts {
+            &-btn {
+                display: none;
+            }
+            &-title {
+                line-height: 30px;
+            }
+            a {
+                color: $main-color;
+            }
+        }
+        &__title {
+            margin-top: 0;
+            font-size: 23px;
+        }
+        &__header {
+            font-size: 55px;
+            margin-top: 16px;
+        }
+        &__subheader {
+            font-size: 32px;
+            margin-top: 0;
+        }
+        &__pic {
+            margin: 24px auto 0 auto;
+            width: 100%;
+        }
+        &__item {
+            &-descr {
+                width: 180px;
+                font-size: 14px;
+            }
+        }
+    } 
+    .advantages {
+        &__item {
+            width: 300px;
+            align-items: center;
+            &:nth-child(7) {
+                margin-bottom: 36px;
+            }
+        }
+    }  
+    .work {
+        &__subtitle {
+            font-size: 17px;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(3, 200px);
+        }
+    } 
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(2,240px);
+        }
+        .consultation {
+            &__contacts {
+                input {
+                    width: 185px;
+                    font-size: 14px;
+                    padding: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 530px;
+        padding: 0px 5px;
+    }
+    .menu {
+        &__list {
+            position: fixed;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0, 0, 0, .8);
+            margin: 0;
+            transition: 0.6s all;
+            &_active {
+                left: 0;
+            }
+            &-item {
+                padding-right: 0;
+                border: none;
+            }
+            &-link {
+                font-size: 16px;
+            }
+        }
+        &__logo {
+            display: block;
+            img {
+                width: 70px;
+                height: 70px;
+                object-fit: contain;
+            }
+        }
+        &__contacts {
+            margin-right: 10px;
+        }
+        &__title {
+            margin-top: 25px;
+            font-size: 19px;
+        }
+        &__header {
+            font-size: 40px;
+            margin-top: 14px;
+        }
+        &__subheader {
+            font-size: 25px;
+        }
+        &__options {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            margin-top: 30px;
+            &-descr {
+                width: 300px;
+                font-size: 16px
+            }
+        }
+    }
+    .hamburger {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        width: 26px;
+        height: 15px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $menu-color;
+            margin-bottom: 3px;
+            transition: 0.5s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px; 
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .advantages {
+        &__item {
+            width: 400px;
+        }
+        &__text {
+            text-align: center;
+        }
+        &__descr {
+            align-items: center;
+        }
+        .title {
+            &_fz26 {
+                font-size: 24px;
+            }
+        }
+    }
+    .work {
+        &__wrapper {
+            grid-template-columns: 360px;
+            margin-top: 0;
+        }
+        &__item {
+            margin-top: 30px;
+        }
+        .title {
+            &_fz26 {
+                font-size: 21px;
+            }
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 546px) {
+    .container {
+        max-width: 300px;
+    }
+    .menu {
+        &__item {
+            &-descr {
+                width: 280px;
+            }
+        }
+    }
+    .advantages {
+        .title {
+            &_fz26 {
+                font-size: 20px;
+            }
+        }
+    }
+    .work {
+        &__wrapper {
+            grid-template-columns: 300px;
+        }
+    }
+}
