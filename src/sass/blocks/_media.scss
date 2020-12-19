@@ -82,6 +82,14 @@
             }
         }
     }
+    .carousel {
+        .slick-prev {
+            left: 385px;
+        }
+        .slick-next {
+            right: 385px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -155,6 +163,38 @@
                     font-size: 14px;
                     padding: 12px;
                 }
+            }
+        }
+    }
+    .schema {
+        &__box {
+            flex-wrap: wrap;
+        }
+    }
+    .carousel {
+        &__descr {
+            width: 480px;
+        }
+        .slick-prev {
+            left: 250px;
+        }
+        .slick-next {
+            left: 450px;
+        }
+    }
+    .questions {
+        &__wrapper {
+            width: 100%;
+        }
+        &__titles {
+            width: 100%;
+        }        
+        &__form {
+            input {
+                width: 213px;
+            }
+            textarea {
+                width: 650px;
             }
         }
     }
@@ -288,6 +328,77 @@
             font-size: 15px;
         }
     }
+    .price {
+        .consultation {
+            &__contacts {
+                input {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+            }
+            &__button {
+                top: 278px;
+            }
+        }
+    }
+    .carousel {
+        &__descr {
+            width: 350px;
+        }
+        .slick-dots {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size: 0;
+            list-style-type: none;
+           
+            button {
+                border: none;
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                font-size: 0;
+                border: solid 2px $main-color;
+                outline: none;
+                background-color: transparent;
+            }
+        }
+        .slick-active {
+            button {
+                background-color: $main-color;
+                width: 21px;
+                height: 21px;
+            }
+        }
+    }
+    .questions {
+        &__form {
+            input {
+                width: 165px;
+            }
+            textarea {
+                width: 500px;
+            }
+        }
+    }
+    .footer {
+        &__title {
+            display: none;
+        }
+        &__site {
+            display: none;
+        }
+        &__policy {
+            margin: 20px;
+            &-data {
+                font-size: 10px;
+            }
+            &-info {
+                font-size: 10px;
+            }
+        }
+    }
 }
 
 @media (max-width: 546px) {
@@ -311,6 +422,96 @@
     .work {
         &__wrapper {
             grid-template-columns: 300px;
+        }
+    }
+    .price {
+        .title {
+            &_fz26 {
+                font-size: 24px;
+            }
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__wrapper {
+            grid-template-columns: 240px;
+        }
+        .consultation {
+            &__title {
+                font-size: 26px;
+            }
+            &__form {
+                margin: 50px;
+            }
+            &__button {
+                top: 240px;
+            }
+            &__icon {
+                top: -55px;
+            }
+        }
+    }
+    .carousel {
+        &__subtitle {
+            font-size: 18px;
+        }
+        .title {
+            &_fz26 {
+                font-size: 22px;
+            }
+        }
+        &__descr {
+            width: 130px;
+            margin: 10px auto;
+            font-size: 12px;
+        }
+        &__title {
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .slick-dots {
+            button {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    .questions {
+        &__form {
+            min-height: 330px;
+            input {
+                width: 250px;
+                margin-top: 10px;
+                margin-right: 0;
+            }
+            textarea {
+                width: 250px;
+            }
+        }
+    }
+    .map {
+        min-height: 300px;
+        padding: 71px 0;
+        &__img {
+            display: none;
+        }
+        &__pic {
+            width: 285px;
+            height: 155px;
+        }
+        &__text {
+            left: 40px;
+        }
+    }
+    .footer {
+        &__policy {
+            margin: 20px auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-info {
+                margin-left: 0;
+            }
         }
     }
 }
